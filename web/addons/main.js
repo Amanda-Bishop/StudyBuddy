@@ -41,20 +41,36 @@ function formatData(data) {
 }
 
 let students = readInFile();
-console.log(students);
+//console.log(students);
+
+var person = {
+    name: 'Priyanka',
+    term: '1B',
+    courses: ['MATH119','ECE106'],
+    timezone: 'EST',
+    tod: 'Afternoon',
+    focus: 'Relaxed',
+    style: 'Visual',
+    wantedMembers: '2',
+    group: []
+};  
 
 function findMatches(person) {
     var possibleMatches = [];
     for (var student=0; student<students.length; student++) {
         if (students[student]["term"] == person["term"]) {
             for (var course=0; course<person["courses"].length; course++) {
-                if (students[student]["courses"].includes(person["courses"][course]) && !possibleMatches.includes(students[student]) && students[student]["wantedMembers"] != 0) {
+                if (students[student]["courses"].includes(person["courses"][course]) && !possibleMatches.includes(students[student]) && students[student]["wantedMembers"] != 1) {
                     possibleMatches.push(students[student]);
                 }
             }
         }
     }
+    return(possibleMatches);
 }
+
+let matches = findMatches(person);
+//console.log(matches);
 
 function addToTeam(person,memberName) {
     person["group"].push(memberName);

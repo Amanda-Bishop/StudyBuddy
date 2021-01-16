@@ -16,7 +16,7 @@ Jilly
 -
 Jilly
 1B
-ECE140 MATH119
+ECE140 ECE106
 EST
 Afternoon Relaxed Auditory
 2

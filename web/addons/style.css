@@ -12,6 +12,7 @@
 /* Body */
 body {
     background-color: #effffe;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Navigation Bar */
@@ -23,14 +24,13 @@ body {
 }
 #navbar::before{
     content: "";
-    background-color: black;
+    background-color: #75d1cc;
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.4;
 }
 
 /* Navigation Bar: Logo and Image */
@@ -52,7 +52,7 @@ body {
     font-size: 1.3rem;
 }
 #navbar ul li a{
-    color: white; 
+    color: black; 
     display: block;
     padding: 3px 22px;
     border-radius: 20px;
@@ -71,6 +71,9 @@ body {
     height: 370px;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-color: #a4ede9;
 }
 #home::before{
     content: "";
@@ -91,7 +94,6 @@ body {
     color: black;
     text-align: center;
     font-size: 1.0rem;
-    font-family: 'Bree Serif', serif;
 }
 
 /* Registration form  */
@@ -108,6 +110,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   button {
+    margin: 6px 2px;
     padding: 6px 2px;
     border: 0.1px solid white;
     background-color: #48a29d;

@@ -67,10 +67,8 @@ function addToTeam(person,memberName) {
 window.onload = function(){
     let matches = findMatches(person);
 
-        console.log(matches[0]);
-
         document.getElementById('name-a').innerHTML = matches[0].name;
-        var courseStrA;
+        var courseStrA = '';
         for (var course=0; course<matches[0].courses.length; course++) {
                 courseStrA += matches[0].courses[course];
             if (course != matches[0].courses.length-1) {
@@ -79,11 +77,11 @@ window.onload = function(){
         }
         document.getElementById('courses-a').innerHTML = courseStrA;
         document.getElementById('timezone-a').innerHTML = matches[0].timezone;
-        document.getElementById('tod-a').innerHTML = matches[0].time;
+        document.getElementById('tod-a').innerHTML = matches[0].tod;
         document.getElementById('focus-a').innerHTML = matches[0].focus;
         document.getElementById('style-a').innerHTML = matches[0].style;
         if (matches[0].group.length != 0) {
-            var groupStrA;
+            var groupStrA = '';
             for (var p=0; p<matches[0].group.length; p++) {
                     groupStrA += matches[0].group[p];
                 if (p != matches[0].group.length-1) {
@@ -94,7 +92,7 @@ window.onload = function(){
         }
 
         document.getElementById('name-g').innerHTML = matches[1].name;
-        var courseStrG;
+        var courseStrG = '';
         for (var course=0; course<matches[1].courses.length; course++) {
                 courseStrG += matches[1].courses[course];
             if (course != matches[1].courses.length-1) {
@@ -103,11 +101,11 @@ window.onload = function(){
         }
         document.getElementById('courses-g').innerHTML = courseStrG;
         document.getElementById('timezone-g').innerHTML = matches[1].timezone;
-        document.getElementById('tod-g').innerHTML = matches[1].time;
+        document.getElementById('tod-g').innerHTML = matches[1].tod;
         document.getElementById('focus-g').innerHTML = matches[1].focus;
         document.getElementById('style-g').innerHTML = matches[1].style;
         if (matches[1].group.length != 0) {
-            var groupStrG;
+            var groupStrG = '';
             for (var p=0; p<matches[1].group.length; p++) {
                     groupStrG += matches[1].group[p];
                 if (p != matches[1].group.length-1) {
@@ -118,7 +116,7 @@ window.onload = function(){
         }
 
         document.getElementById('name-j').innerHTML = matches[2].name;
-        var courseStrJ;
+        var courseStrJ = '';
         for (var course=0; course<matches[2].courses.length; course++) {
                 courseStrJ += matches[2].courses[course];
             if (course != matches[2].courses.length-1) {
@@ -127,11 +125,11 @@ window.onload = function(){
         }
         document.getElementById('courses-j').innerHTML = courseStrJ;
         document.getElementById('timezone-j').innerHTML = matches[2].timezone;
-        document.getElementById('tod-j').innerHTML = matches[2].time;
+        document.getElementById('tod-j').innerHTML = matches[2].tod;
         document.getElementById('focus-j').innerHTML = matches[2].focus;
         document.getElementById('style-j').innerHTML = matches[2].style;
         if (matches[2].group.length != 0) {
-            var groupStrJ;
+            var groupStrJ = '';
             for (var p=0; p<matches[2].group.length; p++) {
                     groupStrJ += matches[2].group[p];
                 if (p != matches[2].group.length-1) {
@@ -140,7 +138,4 @@ window.onload = function(){
             }
             document.getElementById('group-j').innerHTML = groupStrJ;
         }
-        
-    
-    console.log('s');
 }

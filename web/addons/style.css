@@ -230,9 +230,10 @@ input[type=text], input[type=password] {
 #services .box{
     border: 2px solid#48a29d;
     padding: 34px;
-    margin: 3px 6px;
+    margin: 3px 4px;
     border-radius: 23px;
     background: #a4ede9;
+    width: 400px;
 }
 #services .box img{
     height: 280px;
@@ -313,7 +314,7 @@ input[type="submit" i] {
     cursor: pointer;
     color: white;
     margin: 0.1px;
-    background-color: brown;
+    background-color: #189b94;
     box-sizing: border-box;
     padding: 6px 18px;
     border-width: 2px;

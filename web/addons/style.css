@@ -322,7 +322,7 @@ input[type="submit" i] {
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
     -ms-transform: translate(50%, 50%);
-    transform: translate(80%, 50%);
+    transform: translate(430%, 50%);
 }
 
 

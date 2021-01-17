@@ -81,7 +81,7 @@ window.onload = function(){
         document.getElementById('focus-a').innerHTML = matches[0].focus;
         document.getElementById('style-a').innerHTML = matches[0].style;
         if (matches[0].group.length != 0) {
-            var groupStrA = '';
+            var groupStrA = 'Group Member(s): ';
             for (var p=0; p<matches[0].group.length; p++) {
                     groupStrA += matches[0].group[p];
                 if (p != matches[0].group.length-1) {
@@ -89,6 +89,9 @@ window.onload = function(){
                 }
             }
             document.getElementById('group-a').innerHTML = groupStrA;
+        }
+        else {
+            document.getElementById('group-a').innerHTML = "No Group Members";
         }
 
         document.getElementById('name-g').innerHTML = matches[1].name;
@@ -105,7 +108,7 @@ window.onload = function(){
         document.getElementById('focus-g').innerHTML = matches[1].focus;
         document.getElementById('style-g').innerHTML = matches[1].style;
         if (matches[1].group.length != 0) {
-            var groupStrG = '';
+            var groupStrG = 'Group Member(s): ';
             for (var p=0; p<matches[1].group.length; p++) {
                     groupStrG += matches[1].group[p];
                 if (p != matches[1].group.length-1) {
@@ -113,6 +116,9 @@ window.onload = function(){
                 }
             }
             document.getElementById('group-g').innerHTML = groupStrG;
+        }
+        else {
+            document.getElementById('group-a').innerHTML = "No Group Members";
         }
 
         document.getElementById('name-j').innerHTML = matches[2].name;
@@ -129,7 +135,7 @@ window.onload = function(){
         document.getElementById('focus-j').innerHTML = matches[2].focus;
         document.getElementById('style-j').innerHTML = matches[2].style;
         if (matches[2].group.length != 0) {
-            var groupStrJ = '';
+            var groupStrJ = 'Group Member(s): ';
             for (var p=0; p<matches[2].group.length; p++) {
                     groupStrJ += matches[2].group[p];
                 if (p != matches[2].group.length-1) {
@@ -137,5 +143,8 @@ window.onload = function(){
                 }
             }
             document.getElementById('group-j').innerHTML = groupStrJ;
+        }
+        else {
+            document.getElementById('group-a').innerHTML = "No Group Members";
         }
 }

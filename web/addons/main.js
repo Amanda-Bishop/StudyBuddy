@@ -1,17 +1,4 @@
 
-
-function readInFile() {
-    
-    const fs = require('fs') 
-    try {
-        let data = fs.readFileSync('students.txt', 'utf-8');
-        return formatData(data);
-    } catch (error) {
-        console.log("unable to read file: ", error);
-    }
-   
-}
-
 function formatData(data) {
         var ppl = data.split('-');
         var i = 0;
@@ -38,22 +25,7 @@ function formatData(data) {
             }
         }
         return(people);
-}
-
-let students = readInFile();
-//console.log(students);
-
-var person = {
-    name: 'Priyanka',
-    term: '1B',
-    courses: ['MATH119','ECE106'],
-    timezone: 'EST',
-    tod: 'Afternoon',
-    focus: 'Relaxed',
-    style: 'Visual',
-    wantedMembers: 3,
-    group: []
-};  
+} 
 
 function findMatches(person) {
     var possibleMatches = [];
@@ -98,3 +70,10 @@ function addToTeam(person,memberName) {
 addToTeam(person,"Giselle");
 //console.log(person);
 //console.log(students)
+
+window.onload = function(){
+    //let matches = findMatches(person);
+    //console.log(matches);
+    console.log(students[0].name);
+    document.getElementById('name').innerHTML = students[0].name;
+}

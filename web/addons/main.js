@@ -66,32 +66,81 @@ function addToTeam(person,memberName) {
 
 window.onload = function(){
     let matches = findMatches(person);
-    for (var match=0; match<matches.length; match++) {
-        console.log(matches[match]);
-        document.getElementById('people').innerHTML = matches[match].name;
-        var courseStr;
-        for (var course=0; course<matches[match].courses.length; course++) {
-            courseStr += matches[match].courses[course];
-            if (course != matches[match].courses.length-1) {
-                courseStr += ' ';
+
+        console.log(matches[0]);
+
+        document.getElementById('name-a').innerHTML = matches[0].name;
+        var courseStrA;
+        for (var course=0; course<matches[0].courses.length; course++) {
+                courseStrA += matches[0].courses[course];
+            if (course != matches[0].courses.length-1) {
+                courseStrA += ' ';
             }
         }
-        document.getElementById('people').innerHTML = courseStr;
-        document.getElementById('people').innerHTML = matches[match].timezone;
-        document.getElementById('people').innerHTML = matches[match].time;
-        document.getElementById('people').innerHTML = matches[match].focus;
-        document.getElementById('people').innerHTML = matches[match].style;
-        if (matches[match].group.length != 0) {
-            var groupStr;
-            for (var p=0; p<matches[match].group.length; p++) {
-                groupStr += matches[match].group[p];
-                if (p != matches[match].group.length-1) {
-                    groupStr += ' ';
+        document.getElementById('courses-a').innerHTML = courseStrA;
+        document.getElementById('timezone-a').innerHTML = matches[0].timezone;
+        document.getElementById('tod-a').innerHTML = matches[0].time;
+        document.getElementById('focus-a').innerHTML = matches[0].focus;
+        document.getElementById('style-a').innerHTML = matches[0].style;
+        if (matches[0].group.length != 0) {
+            var groupStrA;
+            for (var p=0; p<matches[0].group.length; p++) {
+                    groupStrA += matches[0].group[p];
+                if (p != matches[0].group.length-1) {
+                    groupStrA += ' ';
                 }
             }
-            document.getElementById('people').innerHTML = groupStr;
+            document.getElementById('group-a').innerHTML = groupStrA;
+        }
+
+        document.getElementById('name-g').innerHTML = matches[1].name;
+        var courseStrG;
+        for (var course=0; course<matches[1].courses.length; course++) {
+                courseStrG += matches[1].courses[course];
+            if (course != matches[1].courses.length-1) {
+                courseStrG += ' ';
+            }
+        }
+        document.getElementById('courses-g').innerHTML = courseStrG;
+        document.getElementById('timezone-g').innerHTML = matches[1].timezone;
+        document.getElementById('tod-g').innerHTML = matches[1].time;
+        document.getElementById('focus-g').innerHTML = matches[1].focus;
+        document.getElementById('style-g').innerHTML = matches[1].style;
+        if (matches[1].group.length != 0) {
+            var groupStrG;
+            for (var p=0; p<matches[1].group.length; p++) {
+                    groupStrG += matches[1].group[p];
+                if (p != matches[1].group.length-1) {
+                    groupStrG += ' ';
+                }
+            }
+            document.getElementById('group-g').innerHTML = groupStrG;
+        }
+
+        document.getElementById('name-j').innerHTML = matches[2].name;
+        var courseStrJ;
+        for (var course=0; course<matches[2].courses.length; course++) {
+                courseStrJ += matches[2].courses[course];
+            if (course != matches[2].courses.length-1) {
+                courseStrJ += ' ';
+            }
+        }
+        document.getElementById('courses-j').innerHTML = courseStrJ;
+        document.getElementById('timezone-j').innerHTML = matches[2].timezone;
+        document.getElementById('tod-j').innerHTML = matches[2].time;
+        document.getElementById('focus-j').innerHTML = matches[2].focus;
+        document.getElementById('style-j').innerHTML = matches[2].style;
+        if (matches[2].group.length != 0) {
+            var groupStrJ;
+            for (var p=0; p<matches[2].group.length; p++) {
+                    groupStrJ += matches[2].group[p];
+                if (p != matches[2].group.length-1) {
+                    groupStrJ += ' ';
+                }
+            }
+            document.getElementById('group-j').innerHTML = groupStrJ;
         }
         
-    }
-    console.log('l');
+    
+    console.log('s');
 }

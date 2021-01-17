@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Study Buddy Quiz</title>
-    <link rel="stylesheet" href="addons/quiz.css">
-    <script src="addons/quiz.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
 </head>
-<body>
+<body background="bg_quiz.jpg">
     <main>
+
         <h1>Let's start matching!</h1>
         <h2>Study Buddy Quiz</h2>
         <form method="get" class ="quiz">
@@ -42,6 +44,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <input type="submit" value="Submit">
             </div>
             <div class ="quiz">
                 <label for="timezone"> Time Zone: </label>
@@ -79,8 +82,6 @@
                     <option value="Auditory">Auditory</option>
                 </select>
             </div>
-            <br>
-            <input type="submit" value="Submit"/>
         </form>
     </main>
 </body>
